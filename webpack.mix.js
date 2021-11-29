@@ -9,4 +9,4 @@ mix.js(`src/scripts/app.js`, "dist/")
         from: 'src/images',
         to: 'dist/images'
 	})
-    setPublicPath('dist');
+    .setPublicPath('dist');
