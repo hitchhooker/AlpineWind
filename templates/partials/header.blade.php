@@ -6,5 +6,5 @@
 
     @php(wp_head())
 </head>
-<body @php(body_class())>
+<body class="m-0" @php(body_class())>
 @php(wp_body_open())

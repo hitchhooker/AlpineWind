@@ -1,41 +1,44 @@
 {
-  "name": "mountain-breeze",
+  "name": "alpinewind",
   "version": "1.0.0",
   "description": "A Wordpress theme implementing Tailwind CSS and Alpine JS, and removing jQuery once and for all.",
   "main": "index.js",
   "scripts": {
-    "development": "mix",
+    "development": "windicss './templates/**/*.php' -o ./dist/windi.css -d | mix",
     "dev": "npm run development",
-    "watch": "mix watch",
-    "watch-poll": "mix watch -- --watch-options-poll=1000",
-    "hot": "mix watch --hot",
-    "production": "mix --production",
+    "prod": "npm run production",
+    "watch": "windicss './templates/**/*.php' -o ./dist/windi.css -d | mix watch",
+    "hot": "windicss './templates/**/*.php' -o ./dist/windi.css -d | mix watch --hot",
+    "production": "windicss './templates/**/*.php' -o ./dist/windi.css -m || mix --production",
     "postinstall": "npm run dev"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lukeraymonddowning/MountainBreeze.git#mountainbreeze"
+    "url": "git+https://github.com/lukeraymonddowning/AlpineWind.git#AlpineWind"
   },
   "keywords": [
     "wordpress",
     "php",
-    "tailwindcss",
+    "windicss",
+    "unocss",
     "alpinejs",
-    "jquery",
+    "modern",
+    "starter",
     "theme"
   ],
-  "author": "Luke Raymond Downing",
+  "author": "Tommi Niemi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lukeraymonddowning/MountainBreeze/issues"
+    "url": "https://github.com/lukeraymonddowning/AlpineWind/issues"
   },
-  "homepage": "https://github.com/lukeraymonddowning/MountainBreeze/tree/mountainbreeze#readme",
+  "homepage": "https://github.com/lukeraymonddowning/AlpineWind/tree/AlpineWind#readme",
   "dependencies": {
-    "alpinejs": "^2.0",
-    "tailwindcss": "^2.0"
+    "alpinejs": "^3.5"
   },
   "devDependencies": {
-    "cross-env": "^7.0.0",
-    "laravel-mix": "^6.0"
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.39",
+    "laravel-mix-webp": "0.1.3",
+    "windicss": "^3.2.1"
   }
 }
