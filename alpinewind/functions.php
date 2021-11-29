@@ -24,13 +24,14 @@ add_action('wp_enqueue_scripts', function () {
     }
     wp_enqueue_style('style', get_stylesheet_uri());
     wp_enqueue_script('app', get_stylesheet_directory_uri() . '/dist/app.js');
+    wp_enqueue_style('windi', get_stylesheet_directory_uri() . '/dist/windi.css');
 });
 
 add_filter('template_include', function ($template) {
     $templateName = wp_basename(wp_basename($template, '.php'), '.blade');
     if (getBladeViewFactory()->exists($templateName)) {
         $GLOBALS['template_name'] = $templateName;
-        $template = __DIR__ . '/../mountainbreeze/index.php';
+        $template = __DIR__ . '/../alpinewind/index.php';
     }
 
     return $template;
