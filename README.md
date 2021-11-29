@@ -20,7 +20,7 @@ Requirements:
 From the `wp-content/themes` directory of your Wordpress development environment, run 
 
 ```bash
-composer create-project lukeraymonddowning/mountain-breeze
+composer create-project hitchhooker/alpinewind
 ```
 
 If you want to do things manually, clone, fork or download the repository to your Wordpress 'wp-content/themes' directory.
