@@ -1,4 +1,5 @@
-let mix = require("laravel-mix");
+let mix = require("laravel-mix")
+require("laravel-mix-webp");
 
 mix.js(`src/scripts/app.js`, "dist/")
     .options({
@@ -7,4 +8,5 @@ mix.js(`src/scripts/app.js`, "dist/")
     .ImageWebp({
         from: 'src/images',
         to: 'dist/images'
-	});
+	})
+    setPublicPath('dist');
