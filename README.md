@@ -1,8 +1,9 @@
-# MountainBreeze
+
+# AlpineWind
 A Wordpress theme template for the modern web developer.
 
 # Features
-- [Tailwind CSS](https://tailwindcss.com) baked in
+- [Windi CSS](https://windicss.com) baked in
 - [Alpine JS](https://github.com/alpinejs/alpine) baked in
 - [The Laravel Blade templating engine](https://laravel.com/docs/6.x/blade)
 - [Laravel Collections](https://laravel.com/docs/6.x/collections)
