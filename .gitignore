@@ -2,3 +2,4 @@
 /vendor/
 /dist/
 /compiled/*.php
+yarn.lock
