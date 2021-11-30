@@ -1,12 +1,12 @@
 {
-    "name": "lukeraymonddowning/mountain-breeze",
-    "description": "A Wordpress theme implementing Tailwind CSS and Alpine JS, and removing jQuery once and for all.",
+    "name": "hitchhooker/alpinewind",
+    "description": "A Wordpress theme implementing WindiCSS and Alpine JS.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Luke Downing",
-            "email": "lukeraymonddowning@gmail.com"
+            "name": "Tommi Niemi",
+            "email": "tommi@niemi.lol"
         }
     ],
     "require": {
