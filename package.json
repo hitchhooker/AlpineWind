@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "development": "windicss './templates/**/*.php' -o ./dist/windi.css -d | mix",
-    "dev": "npm run development",
-    "prod": "npm run production",
+    "dev": "yarn run development",
+    "prod": "yarn run production",
     "watch": "windicss './templates/**/*.php' -o ./dist/windi.css -d | mix watch",
     "hot": "windicss './templates/**/*.php' -o ./dist/windi.css -d | mix watch --hot",
     "production": "windicss './templates/**/*.php' -o ./dist/windi.css -m || mix --production",
-    "postinstall": "npm run dev"
+    "postinstall": "yarn run dev"
   },
   "repository": {
     "type": "git",
